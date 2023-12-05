@@ -1,12 +1,14 @@
 package org.example;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
+
         //Entradas del problema
-        String nombreUsuario="Juan Jose Gallego Mesa";
+        String nombreUsuario="alejis";
         short edadUsuario=34;
         String telefonoUsuario="3225962363";
         String documentoIdentidad="1017187878";
@@ -30,10 +32,28 @@ public class Main {
 
         //1. Asignar un valor especifico a una variable
         //desde el TECLADO (Recibir datos)
+
         Scanner leerDato = new Scanner(System.in);
 
-        System.out.println("Hola soy una IA, cual es tu nombre?");
-        //leerDato.nextLine();
+        System.out.println("cual es tu nombre? ");
+        nombreUsuario=leerDato.nextLine();
+        System.out.println("Bienvenido " + nombreUsuario);
+
+        System.out.println("cual es su numero celular ");
+        telefonoUsuario=leerDato.nextLine();
+        System.out.println ("su numero de celular es: " + telefonoUsuario);
+
+        System.out.println("numero de documento de identidad?");
+        documentoIdentidad=leerDato.nextLine();
+        System.out.println("su numero de identidad es:" + documentoIdentidad);
+
+        System.out.println("cual es tu edad?");
+        edadUsuario=leerDato.nextShort();
+        System.out.println("tu edad es: " + edadUsuario);
+
+        System.out.println("");
+
+
 
 
 
